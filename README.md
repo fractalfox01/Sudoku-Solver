@@ -6,7 +6,7 @@ A simple sudoku solver written in C.
 Uses iterative backtracking. Originaly as recursive but the stack blows with harder puzzles.
 If using code on a unix/linux based machine then slight modification to the code is needed.
 in the get_puzzle function the 11 in the read() function should be a 10. simple
-For some reason this 1 off between systems.
+but for some reason it's 1 off between systems.
 
 ## Using this program:
 <pre>$> gcc -g main.c -o sudoku_solver
@@ -36,8 +36,8 @@ HARD PUZZLE
 8 5 7 6 1 3 9 4 2</pre>
 
 ## Puzzle file format
-Puzzles must onlu contain the numbers 1 - 9 and must substitue all 0 (zeros) for '.' (periods)
-!!!And must end in a newline!!!
+Puzzles must only contain the numbers 1 - 9 and must substitue all 0 (zeros) for '.' (periods)
+!!!And must end in a newline!!! Thems the rules, don't like them? change the code :D
 Example:
 <pre>1........
 ...5.4...
